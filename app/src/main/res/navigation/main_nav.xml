@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.free.quran.audio.book.view.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_quranFragment"
+            app:destination="@id/quranFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_hadisFragment"
+            app:destination="@id/hadisFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_duaFragment"
+            app:destination="@id/duaFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_favoriteFragment"
+            app:destination="@id/favoriteFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_kalimFragment"
+            app:destination="@id/kalimFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_tajbihFragment"
+            app:destination="@id/tajbihFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_reminderFragment"
+            app:destination="@id/reminderFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_occasionFragment"
+            app:destination="@id/occasionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quranFragment"
+        android:name="com.free.quran.audio.book.view.QuranFragment"
+        android:label="fragment_quran"
+        tools:layout="@layout/fragment_quran" />
+    <fragment
+        android:id="@+id/hadisFragment"
+        android:name="com.free.quran.audio.book.view.HadisFragment"
+        android:label="fragment_hadis"
+        tools:layout="@layout/fragment_hadis" />
+    <fragment
+        android:id="@+id/duaFragment"
+        android:name="com.free.quran.audio.book.view.DuaFragment"
+        android:label="fragment_dua"
+        tools:layout="@layout/fragment_dua" />
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.free.quran.audio.book.view.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/kalimFragment"
+        android:name="com.free.quran.audio.book.view.KalimaFragment"
+        android:label="fragment_kalim"
+        tools:layout="@layout/fragment_kalima" />
+    <fragment
+        android:id="@+id/tajbihFragment"
+        android:name="com.free.quran.audio.book.view.TajbihFragment"
+        android:label="fragment_tajbih"
+        tools:layout="@layout/fragment_tajbih" />
+    <fragment
+        android:id="@+id/reminderFragment"
+        android:name="com.free.quran.audio.book.view.ReminderFragment"
+        android:label="fragment_reminder"
+        tools:layout="@layout/fragment_reminder" />
+    <fragment
+        android:id="@+id/occasionFragment"
+        android:name="com.free.quran.audio.book.view.OccasionFragment"
+        android:label="fragment_occasion"
+        tools:layout="@layout/fragment_occasion" />
+</navigation>
